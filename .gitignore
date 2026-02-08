@@ -1,0 +1,16 @@
+# Git worktrees
+.worktrees/
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies (if needed in future)
+node_modules/
+dist/
