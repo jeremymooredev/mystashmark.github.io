@@ -176,11 +176,11 @@ We offer a 30-day money-back guarantee so you can try Pro risk-free.
 
 **I need help with my purchase.**
 
-Visit [support@readlatergit.com](mailto:support@readlatergit.com) or [create an issue on GitHub](https://github.com/your-username/read-later-git/issues).
+Email [support@mystashmark.com](mailto:support@mystashmark.com) for purchase help. Please do not post payment or account details in public issues.
 
 **Where can I report bugs or request features?**
 
-Please report issues or request features on [our GitHub repository](https://github.com/your-username/read-later-git/issues).
+Please report non-sensitive issues or request features in the [public support tracker](https://github.com/jeremymooredev/support/issues).
 
 ---
 
@@ -197,9 +197,9 @@ Not sure? Try it risk-free with our 30-day money-back guarantee.
 ## Still Have Questions?
 
 - **Documentation:** [Read the user guide](../USER_GUIDE.md)
-- **GitHub Issues:** [Report bugs or request features](https://github.com/your-username/read-later-git/issues)
+- **GitHub Issues:** [Report bugs or request features](https://github.com/jeremymooredev/support/issues)
 - **YouTube:** [Watch tutorials and demos](https://www.youtube.com/@readlatergit)
-- **Email:** [support@readlatergit.com](mailto:support@readlatergit.com)
+- **Email:** [support@mystashmark.com](mailto:support@mystashmark.com)
 
 ---
 
