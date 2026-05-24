@@ -1,0 +1,5 @@
+There is no longer a save limit, this has been fixed.
+we're going to use mystashmark.com for the domain
+mystashmark.github.io is the repo where users can submit issues
+no longer reference as read-it-later-git, we'll use My Stash Mark
+

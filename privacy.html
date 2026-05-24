@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - My Stash Mark</title>
+  <meta name="description" content="Privacy Policy for My Stash Mark, a browser extension that saves articles to your own GitHub or GitLab repository." />
+  <meta name="theme-color" content="#f8f5ee" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23fffaf0'/%3E%3Cpath d='M18 48V16h8l6 17 6-17h8v32h-7V28L34 43h-4l-5-15v20z' fill='%231f5145'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --paper: #f8f5ee;
+      --paper-2: #fffdf8;
+      --ink: #24231f;
+      --ink-soft: #676056;
+      --leaf: #2f6f5e;
+      --leaf-deep: #1f5145;
+      --line: #ded5c7;
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Verdana, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--leaf-deep);
+      font-weight: 700;
+    }
+
+    .wrap {
+      width: min(860px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--line);
+      background: rgba(248, 245, 238, 0.92);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .home {
+      display: inline-flex;
+      min-height: 40px;
+      align-items: center;
+      padding: 0.55rem 0.78rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper-2);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 4rem 0;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 0 0.75rem;
+      font-family: Georgia, serif;
+      font-size: clamp(2.4rem, 8vw, 4.8rem);
+    }
+
+    h2 {
+      margin: 2.4rem 0 0.7rem;
+      font-size: 1.45rem;
+    }
+
+    p,
+    li {
+      color: var(--ink-soft);
+    }
+
+    .lede {
+      max-width: 740px;
+      margin: 0 0 1.5rem;
+      font-size: 1.12rem;
+    }
+
+    .updated {
+      display: inline-block;
+      margin: 0 0 2rem;
+      padding: 0.35rem 0.62rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper-2);
+      color: var(--leaf-deep);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .notice {
+      padding: 1rem;
+      border: 1px solid #cfded2;
+      border-radius: var(--radius);
+      background: #f1f6f2;
+    }
+
+    code {
+      padding: 0.1rem 0.28rem;
+      border-radius: 4px;
+      background: #eee7dc;
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Policy navigation">
+      <a class="brand" href="index.html">My Stash Mark</a>
+      <a class="home" href="index.html">Back to home</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="lede">My Stash Mark is designed to save articles to storage you control. The extension does not operate a hosted reading database, and your saved article content is not sent to My Stash Mark servers.</p>
+    <p class="updated">Last updated: May 24, 2026</p>
+
+    <p class="notice">This policy explains the current and intended launch behavior of My Stash Mark. If a feature changes how data is collected, used, or shared, this policy should be updated before that feature is released.</p>
+
+    <h2>1. Who This Policy Covers</h2>
+    <p>This Privacy Policy applies to the My Stash Mark browser extension, the My Stash Mark website, and related support or purchase flows. In this policy, "My Stash Mark," "we," "us," and "our" refer to the operator of My Stash Mark.</p>
+
+    <h2>2. What the Extension Does</h2>
+    <p>My Stash Mark lets you save web articles as markdown files in a GitHub or GitLab repository that you choose. The extension extracts readable article content in your browser, formats it as markdown with metadata, and sends it directly from your browser to your selected Git provider.</p>
+
+    <h2>3. Information Stored Locally in Your Browser</h2>
+    <p>The extension may store the following information in browser storage so it can function:</p>
+    <ul>
+      <li>Repository settings, such as Git provider, repository owner, repository name, branch, GitLab URL, save path, and repository labels.</li>
+      <li>Your Personal Access Token or similar Git provider token.</li>
+      <li>Your Pro license key and local Pro activation status.</li>
+      <li>Article drafts or queued saves when offline syncing or retrying a failed save.</li>
+      <li>Basic local counters or settings used by the extension.</li>
+    </ul>
+    <p>This local data is stored by your browser. You can remove it by clearing the extension's storage, uninstalling the extension, or using browser-provided extension controls.</p>
+
+    <h2>4. Article Content and Repository Data</h2>
+    <p>When you save an article, the article content, source URL, title, tags, filename, and generated metadata are sent directly to your selected GitHub or GitLab repository. My Stash Mark does not receive, host, or store your saved article content.</p>
+    <p>If a save fails or you are offline, the extension may keep a local queue in your browser until it can retry. That queue is not sent to My Stash Mark.</p>
+
+    <h2>5. Personal Access Tokens</h2>
+    <p>Your Git provider token is used only to make requests from your browser to GitHub, GitLab, or your configured GitLab instance. My Stash Mark does not intentionally collect your token and does not sell or share it.</p>
+    <p>You are responsible for creating tokens with permissions you are comfortable granting. If you believe a token has been exposed, revoke it through your Git provider and create a new one.</p>
+
+    <h2>6. License Activation and Payments</h2>
+    <p>If you purchase or activate Pro features, payment and licensing may be handled by Lemon Squeezy or another payment and license provider. Those providers may process information such as your email address, payment details, billing address, transaction identifiers, product purchased, license key, activation status, and tax-related information.</p>
+    <p>The extension may contact the license provider to activate or validate your license key. Payment card details are handled by the payment processor, not by the extension.</p>
+
+    <h2>7. Analytics and Diagnostics</h2>
+    <p>The extension code includes optional Google Analytics Measurement Protocol support. If analytics are enabled for a release, My Stash Mark may collect limited diagnostic events such as install or update events, successful save counts, Git provider type, save source, approximate word count, and sanitized error categories.</p>
+    <p>Analytics events are not intended to include article URLs, article titles, article content, repository names, repository owners, file paths, tags, Personal Access Tokens, or license keys. Error messages should be sanitized before analytics are sent.</p>
+    <p>If analytics credentials are not configured, analytics events are not sent by the current extension code.</p>
+
+    <h2>8. Website Data</h2>
+    <p>The My Stash Mark website is a static marketing and documentation site. The site itself does not require an account. The website host, domain provider, browser, or network infrastructure may automatically process basic technical information such as IP address, user agent, referring page, requested URL, and timestamps to deliver the site and maintain security.</p>
+    <p>If website analytics, forms, checkout links, or embedded media are added later, those services may collect data according to their own privacy policies, and this policy should be updated to describe them.</p>
+
+    <h2>9. How Information Is Used</h2>
+    <p>Information is used to:</p>
+    <ul>
+      <li>Save articles to the repository you select.</li>
+      <li>Store your settings and queued saves locally.</li>
+      <li>Activate, validate, and manage Pro features.</li>
+      <li>Process purchases, refunds, subscriptions, tax obligations, and support requests.</li>
+      <li>Diagnose bugs, improve reliability, and understand basic product usage if analytics are enabled.</li>
+      <li>Respond to support, security, legal, or compliance requests.</li>
+    </ul>
+
+    <h2>10. When Information Is Shared</h2>
+    <p>My Stash Mark does not sell your personal information. Information may be shared or processed in these limited ways:</p>
+    <ul>
+      <li>With GitHub, GitLab, or your configured GitLab instance, when you direct the extension to save articles or validate repository access.</li>
+      <li>With payment and license providers, when you purchase, activate, validate, renew, cancel, or refund Pro features.</li>
+      <li>With analytics or diagnostic providers, if analytics are enabled as described above.</li>
+      <li>With website hosting, infrastructure, and support providers as needed to operate the website and support channels.</li>
+      <li>When required by law, legal process, security needs, or to protect the rights and safety of users or others.</li>
+    </ul>
+
+    <h2>11. Data Retention</h2>
+    <p>Local extension data remains in your browser until you delete it, uninstall the extension, or your browser removes it. Saved articles remain in your Git repository until you delete them from that repository.</p>
+    <p>Purchase, tax, license, support, and diagnostic records may be retained as long as needed for account administration, legal compliance, dispute resolution, fraud prevention, security, and business records.</p>
+
+    <h2>12. Your Choices and Rights</h2>
+    <p>You can:</p>
+    <ul>
+      <li>Delete saved articles directly from your Git repository.</li>
+      <li>Clear extension data through your browser.</li>
+      <li>Revoke Git provider tokens through GitHub, GitLab, or your configured GitLab instance.</li>
+      <li>Uninstall the extension at any time.</li>
+      <li>Contact us to request access, correction, deletion, or portability of personal information that we control, such as purchase or support records.</li>
+    </ul>
+    <p>Depending on where you live, you may have additional privacy rights under laws such as GDPR, UK GDPR, CCPA/CPRA, or similar laws. We will respond to applicable requests as required by law.</p>
+
+    <h2>13. Children's Privacy</h2>
+    <p>My Stash Mark is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
+
+    <h2>14. Security</h2>
+    <p>We use reasonable technical and organizational measures appropriate for the nature of the product. No method of storage or transmission is perfectly secure. You should protect your browser profile, Git provider account, and Personal Access Tokens.</p>
+
+    <h2>15. Third-Party Services</h2>
+    <p>Your use of GitHub, GitLab, Lemon Squeezy, Google Analytics, browser stores, and other third-party services is governed by those services' own terms and privacy policies. My Stash Mark is not responsible for the privacy practices of third-party services.</p>
+
+    <h2>16. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a new "Last updated" date. Material changes should be communicated in a reasonable way, such as through the website, extension release notes, or store listing.</p>
+
+    <h2>17. Contact</h2>
+    <p>For privacy questions or requests, email <a href="mailto:support@mystashmark.com">support@mystashmark.com</a>. For non-sensitive bugs or feature requests, you may also use the <a href="https://github.com/mystashmark/mystashmark.github.io/issues">GitHub issue tracker</a>.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>My Stash Mark - Privacy Policy</span>
+    </div>
+  </footer>
+</body>
+</html>
