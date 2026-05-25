@@ -176,7 +176,7 @@ We offer a 30-day money-back guarantee so you can try Pro risk-free.
 
 **I need help with my purchase.**
 
-Email [support@mystashmark.com](mailto:support@mystashmark.com) for purchase help. Please do not post payment or account details in public issues.
+For now, use the purchase support options provided by Lemon Squeezy. Please do not post payment or account details in public issues.
 
 **Where can I report bugs or request features?**
 
@@ -199,7 +199,6 @@ Not sure? Try it risk-free with our 30-day money-back guarantee.
 - **Documentation:** [Read the user guide](../USER_GUIDE.md)
 - **GitHub Issues:** [Report bugs or request features](https://github.com/jeremymooredev/support/issues)
 - **YouTube:** [Watch tutorials and demos](https://www.youtube.com/@readlatergit)
-- **Email:** [support@mystashmark.com](mailto:support@mystashmark.com)
 
 ---
 
