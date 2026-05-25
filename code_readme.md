@@ -1,4 +1,4 @@
-# Read Later Git
+# My Stash Mark
 
 A browser extension that saves articles directly to your GitHub or GitLab repository for reading later. No server required - your data stays in your own git repository.
 
@@ -53,8 +53,8 @@ The extension is designed to handle:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/read-later-git.git
-   cd read-later-git
+   git clone https://github.com/your-username/my-stash-mark.git
+   cd my-stash-mark
    ```
 
 2. Install dependencies:
@@ -146,7 +146,7 @@ npm run build
 ### Project Structure
 
 ```
-read-later-git/
+my-stash-mark/
 ├── src/
 │   ├── manifest.json           # Extension manifest
 │   ├── background/

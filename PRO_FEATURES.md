@@ -1,10 +1,10 @@
-# Read Later Git Pro
+# My Stash Mark Pro
 
 Unlock powerful features for power users who save and organize articles at scale.
 
 ## Why Go Pro?
 
-Read Later Git Pro is designed for users who want to organize their saved articles across multiple repositories, customize their file organization, and streamline their workflow. Whether you're managing research across multiple projects or organizing articles by topic, Pro features give you the control you need.
+My Stash Mark Pro is designed for users who want to organize their saved articles across multiple repositories, customize their file organization, and streamline their workflow. Whether you're managing research across multiple projects or organizing articles by topic, Pro features give you the control you need.
 
 ---
 
@@ -16,7 +16,7 @@ Watch our quick demo to see how Pro features streamline your workflow:
   width="100%"
   height="400"
   src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-  title="Read Later Git Pro Features Demo"
+  title="My Stash Mark Pro Features Demo"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
@@ -89,7 +89,7 @@ Automatically organize your articles with date-based folder structures (YYYY/MM)
 
 ## Pricing
 
-### Read Later Git Pro
+### My Stash Mark Pro
 
 **$9** — One-time purchase
 **$4.99/month** — Monthly subscription (billed monthly)
@@ -122,7 +122,7 @@ After purchasing, you'll receive a license key via email. Go to the extension se
 
 **Can I use my license on multiple devices?**
 
-Yes! Your license key works on any device where you install the extension. You can use Read Later Git Pro on your desktop, laptop, and other computers.
+Yes! Your license key works on any device where you install the extension. You can use My Stash Mark Pro on your desktop, laptop, and other computers.
 
 **How long does my license last?**
 
@@ -162,7 +162,7 @@ Keep your license key safe (treat it like a password). If you lose it, you can r
 
 **Does Pro work offline?**
 
-No, Read Later Git requires an internet connection to save articles to Git. However, articles you've already saved are available in your Git repositories anytime.
+No, My Stash Mark requires an internet connection to save articles to Git. However, articles you've already saved are available in your Git repositories anytime.
 
 ### Billing & Support
 
@@ -203,4 +203,4 @@ Not sure? Try it risk-free with our 30-day money-back guarantee.
 
 ---
 
-*Read Later Git Pro — Organize your reading, organize your life.*
+*My Stash Mark Pro — Organize your reading, organize your life.*

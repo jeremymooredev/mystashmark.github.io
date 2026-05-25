@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**MyStashMark** (formerly "Read Later Git") is a browser extension for saving articles to GitHub or GitLab repositories. Users click the extension icon to save articles as markdown files with YAML frontmatter, organized by date.
+**My Stash Mark** is a browser extension for saving articles to GitHub or GitLab repositories. Users click the extension icon to save articles as markdown files with YAML frontmatter, organized by date.
 
 **Key Points:**
 - Domain: `mystashmark.com` (public website)
@@ -65,7 +65,7 @@ mystashmark.github.io/
 ### Data Persistence & Sync
 - Articles stored in user's own Git repository (no central server)
 - Pending queue stored locally if offline, synced when online
-- No data sent to MyStashMark servers (privacy-first design)
+- No data sent to My Stash Mark servers (privacy-first design)
 
 ## Performance & Scale
 
@@ -154,7 +154,7 @@ site: "Site Name"
 
 ### Token Storage Security
 - Personal Access Tokens stored only in `chrome.storage.local` (encrypted by browser)
-- Never sent to MyStashMark servers
+- Never sent to My Stash Mark servers
 - Users responsible for token security (regenerate if compromised)
 
 ## Documentation Files in This Repo
