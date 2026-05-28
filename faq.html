@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FAQ - My Stash Mark</title>
+        <meta
+            name="description"
+            content="Frequently asked questions about My Stash Mark, Pro features, and how it compares with Obsidian Web Clipper and Notion Web Clipper."
+        />
+        <meta name="theme-color" content="#f8f5ee" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23fffaf0'/%3E%3Cpath d='M18 48V16h8l6 17 6-17h8v32h-7V28L34 43h-4l-5-15v20z' fill='%231f5145'/%3E%3C/svg%3E"
+        />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-8G0C6R09K1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-8G0C6R09K1");
+        </script>
+        <style>
+            :root {
+                --paper: #f8f5ee;
+                --paper-2: #fffdf8;
+                --paper-3: #eee7dc;
+                --ink: #24231f;
+                --ink-soft: #676056;
+                --leaf: #2f6f5e;
+                --leaf-deep: #1f5145;
+                --blue: #286fbb;
+                --rose: #b95f50;
+                --line: #ded5c7;
+                --radius: 8px;
+                --shadow: 0 12px 34px rgba(64, 57, 48, 0.09);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                color: var(--ink);
+                background:
+                    linear-gradient(
+                        90deg,
+                        rgba(36, 35, 31, 0.025) 1px,
+                        transparent 1px
+                    ),
+                    linear-gradient(
+                        180deg,
+                        rgba(36, 35, 31, 0.02) 1px,
+                        transparent 1px
+                    ),
+                    var(--paper);
+                background-size: 42px 42px;
+                font-family: Verdana, system-ui, sans-serif;
+                font-size: 17px;
+                line-height: 1.68;
+            }
+
+            a {
+                color: var(--leaf-deep);
+                font-weight: 800;
+            }
+
+            .wrap {
+                width: min(1040px, calc(100% - 36px));
+                margin: 0 auto;
+            }
+
+            header {
+                border-bottom: 1px solid var(--line);
+                background: rgba(248, 245, 238, 0.92);
+            }
+
+            nav {
+                min-height: 68px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+
+            .brand {
+                color: var(--ink);
+                text-decoration: none;
+                font-weight: 800;
+            }
+
+            .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+            }
+
+            .button {
+                display: inline-flex;
+                min-height: 42px;
+                align-items: center;
+                justify-content: center;
+                padding: 0.58rem 0.82rem;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                background: var(--paper-2);
+                text-decoration: none;
+            }
+
+            main {
+                padding: 4.5rem 0;
+            }
+
+            .hero {
+                display: grid;
+                grid-template-columns: minmax(0, 0.86fr) minmax(280px, 0.5fr);
+                gap: 2.5rem;
+                align-items: end;
+                margin-bottom: 3rem;
+            }
+
+            .kicker {
+                margin: 0 0 0.8rem;
+                color: var(--rose);
+                font-size: 0.82rem;
+                font-weight: 800;
+                letter-spacing: 0;
+                text-transform: uppercase;
+            }
+
+            h1,
+            h2,
+            h3 {
+                margin: 0;
+                line-height: 1.12;
+                letter-spacing: 0;
+            }
+
+            h1 {
+                max-width: 780px;
+                font-family: Georgia, serif;
+                font-size: clamp(2.65rem, 7vw, 5rem);
+            }
+
+            h2 {
+                margin: 3rem 0 1rem;
+                font-family: Georgia, serif;
+                font-size: clamp(2rem, 4vw, 3.35rem);
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            p,
+            li {
+                color: var(--ink-soft);
+            }
+
+            .lede {
+                margin: 1rem 0 0;
+                max-width: 720px;
+                font-size: 1.12rem;
+            }
+
+            .source-card,
+            .answer,
+            .compare-table,
+            .callout {
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                background: var(--paper-2);
+                box-shadow: var(--shadow);
+            }
+
+            .source-card {
+                padding: 1rem;
+            }
+
+            .source-card p {
+                margin: 0.4rem 0 0;
+            }
+
+            .answer-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1rem;
+            }
+
+            .answer {
+                padding: 1.2rem;
+            }
+
+            .answer p {
+                margin: 0.55rem 0 0;
+            }
+
+            .compare-table {
+                overflow: hidden;
+            }
+
+            .compare-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .compare-row:last-child {
+                border-bottom: 0;
+            }
+
+            .compare-row.header {
+                background: var(--paper-3);
+                font-weight: 800;
+            }
+
+            .compare-row > div {
+                padding: 0.9rem;
+                border-right: 1px solid var(--line);
+            }
+
+            .compare-row > div:last-child {
+                border-right: 0;
+            }
+
+            .compare-row p {
+                margin: 0.25rem 0 0;
+                font-size: 0.94rem;
+            }
+
+            .callout {
+                margin-top: 2rem;
+                padding: 1.2rem;
+                border-color: #cfded2;
+                background: #f1f6f2;
+            }
+
+            code {
+                padding: 0.1rem 0.28rem;
+                border-radius: 4px;
+                background: var(--paper-3);
+                color: var(--ink);
+                font-family:
+                    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                    monospace;
+                font-size: 0.92em;
+            }
+
+            footer {
+                padding: 2rem 0;
+                border-top: 1px solid var(--line);
+                background: var(--paper-3);
+                color: var(--ink-soft);
+                font-size: 0.92rem;
+            }
+
+            footer .wrap {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            footer a {
+                text-decoration: none;
+            }
+
+            @media (max-width: 820px) {
+                .hero,
+                .answer-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .compare-table {
+                    overflow-x: auto;
+                }
+
+                .compare-row {
+                    min-width: 760px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="wrap" aria-label="FAQ navigation">
+                <a class="brand" href="index.html">My Stash Mark</a>
+                <div class="nav-links">
+                    <a href="index.html#install">Install</a>
+                    <a href="index.html#pro">Pro</a>
+                    <a class="button" href="index.html">Back to home</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="wrap">
+            <section class="hero">
+                <div>
+                    <p class="kicker">FAQ and comparison</p>
+                    <h1>Should you use My Stash Mark?</h1>
+                    <p class="lede">
+                        Use it when you want saved articles to become durable
+                        markdown files in a Git repository you control. The free
+                        version covers the core workflow; Pro is for people who
+                        need cleaner organization across more than one context.
+                    </p>
+                </div>
+                <aside class="source-card">
+                    <h3>The short version</h3>
+                    <p>
+                        My Stash Mark is for Git-backed markdown archives.
+                        Obsidian Web Clipper is strongest for vault-native
+                        clipping. Notion Web Clipper is strongest when Notion is
+                        already your workspace.
+                    </p>
+                </aside>
+            </section>
+
+            <section aria-labelledby="quick-answers">
+                <h2 id="quick-answers">Quick Answers</h2>
+                <div class="answer-grid">
+                    <article class="answer">
+                        <h3>What is My Stash Mark best at?</h3>
+                        <p>
+                            Turning readable web articles into markdown files in
+                            your own GitHub or GitLab repository. It is built
+                            for ownership, portability, and versioned archives.
+                        </p>
+                    </article>
+                    <article class="answer">
+                        <h3>Do I need Pro?</h3>
+                        <p>
+                            Not for the basic save flow. Use Free for one
+                            reading repository. Use Pro when you need multiple
+                            repositories, custom save paths, and labels.
+                        </p>
+                    </article>
+                    <article class="answer">
+                        <h3>Why not just bookmark pages?</h3>
+                        <p>
+                            Bookmarks point back to the web. My Stash Mark keeps
+                            a readable markdown copy with metadata, so your
+                            archive remains useful even if pages move or change.
+                        </p>
+                    </article>
+                    <article class="answer">
+                        <h3>Where does my data live?</h3>
+                        <p>
+                            Article content is saved to the Git repository you
+                            choose. Repository settings and tokens are stored
+                            locally by your browser.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="free-pro">
+                <h2 id="free-pro">Free vs Pro</h2>
+                <div class="answer-grid">
+                    <article class="answer">
+                        <h3>Use the free version when...</h3>
+                        <ul>
+                            <li>You want one Git-backed reading archive.</li>
+                            <li>You want markdown with frontmatter.</li>
+                            <li>
+                                You are saving articles for yourself, not
+                                routing them across projects.
+                            </li>
+                            <li>
+                                The default <code>articles/YYYY/MM/</code>
+                                structure is good enough.
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="answer">
+                        <h3>Pro is a good fit when...</h3>
+                        <ul>
+                            <li>
+                                You split reading between personal, work,
+                                research, or client repositories.
+                            </li>
+                            <li>
+                                You want custom paths such as
+                                <code>research/ai/</code> or
+                                <code>clients/acme/reading/</code>.
+                            </li>
+                            <li>
+                                You want readable repo labels in the popup.
+                            </li>
+                            <li>
+                                You collaborate with a team through shared Git
+                                repositories.
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="comparison">
+                <h2 id="comparison">How It Compares</h2>
+                <div
+                    class="compare-table"
+                    role="table"
+                    aria-label="Comparison between My Stash Mark, Obsidian Web Clipper, and Notion Web Clipper"
+                >
+                    <div class="compare-row header" role="row">
+                        <div role="columnheader">Need</div>
+                        <div role="columnheader">My Stash Mark</div>
+                        <div role="columnheader">Obsidian Web Clipper</div>
+                        <div role="columnheader">Notion Web Clipper</div>
+                    </div>
+                    <div class="compare-row" role="row">
+                        <div role="cell">
+                            <strong>Primary home</strong>
+                            <p>Where clipped content is meant to live.</p>
+                        </div>
+                        <div role="cell">
+                            GitHub or GitLab repositories as markdown files.
+                        </div>
+                        <div role="cell">
+                            An Obsidian vault, saved locally as notes.
+                        </div>
+                        <div role="cell">
+                            A Notion workspace page or database.
+                        </div>
+                    </div>
+                    <div class="compare-row" role="row">
+                        <div role="cell">
+                            <strong>Best reason to choose it</strong>
+                            <p>The strongest workflow fit.</p>
+                        </div>
+                        <div role="cell">
+                            You want Git history, file portability, and a
+                            repository-centered archive.
+                        </div>
+                        <div role="cell">
+                            You already live in Obsidian and want clipping,
+                            highlights, templates, and vault-native notes.
+                        </div>
+                        <div role="cell">
+                            Your notes, tasks, docs, and team processes already
+                            live in Notion.
+                        </div>
+                    </div>
+                    <div class="compare-row" role="row">
+                        <div role="cell">
+                            <strong>Portability</strong>
+                            <p>How easy the archive is to reuse elsewhere.</p>
+                        </div>
+                        <div role="cell">
+                            Plain markdown in Git, easy to script, sync, back
+                            up, publish, or open in another editor.
+                        </div>
+                        <div role="cell">
+                            Markdown-oriented local vault files, strongest if
+                            Obsidian is already your note system.
+                        </div>
+                        <div role="cell">
+                            Most useful inside Notion; export or API workflows
+                            may be needed for file-based archives.
+                        </div>
+                    </div>
+                    <div class="compare-row" role="row">
+                        <div role="cell">
+                            <strong>Team or project routing</strong>
+                            <p>Saving into different work contexts.</p>
+                        </div>
+                        <div role="cell">
+                            Pro supports multiple repositories, labels, and
+                            custom save paths.
+                        </div>
+                        <div role="cell">
+                            Strong for vault and folder routing inside
+                            Obsidian.
+                        </div>
+                        <div role="cell">
+                            Strong for shared Notion workspaces and databases.
+                        </div>
+                    </div>
+                    <div class="compare-row" role="row">
+                        <div role="cell">
+                            <strong>Not ideal when...</strong>
+                            <p>Cases where another tool may fit better.</p>
+                        </div>
+                        <div role="cell">
+                            You do not want to use GitHub or GitLab.
+                        </div>
+                        <div role="cell">
+                            You do not use Obsidian or do not want a local
+                            vault workflow.
+                        </div>
+                        <div role="cell">
+                            You want a plain-file archive outside a hosted
+                            workspace.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <h3>The short version</h3>
+                    <p>
+                        Pick My Stash Mark for Git-backed markdown. Pick
+                        Obsidian Web Clipper for vault-native clipping. Pick
+                        Notion Web Clipper for Notion-native collecting.
+                    </p>
+                </div>
+            </section>
+
+            <section aria-labelledby="more-faq">
+                <h2 id="more-faq">More Questions</h2>
+                <div class="answer-grid">
+                    <article class="answer">
+                        <h3>Can I use My Stash Mark with Obsidian?</h3>
+                        <p>
+                            Yes. Save articles to a Git repository and open or
+                            sync that markdown repository with your Obsidian
+                            workflow. If you want direct local-vault clipping
+                            without Git, Obsidian Web Clipper may be the better
+                            fit.
+                        </p>
+                    </article>
+                    <article class="answer">
+                        <h3>Can I use it with Notion?</h3>
+                        <p>
+                            My Stash Mark does not save directly into Notion.
+                            It is better for people who want markdown files in
+                            Git. Use Notion Web Clipper if Notion is the final
+                            destination.
+                        </p>
+                    </article>
+                    <article class="answer">
+                        <h3>Does Pro change privacy?</h3>
+                        <p>
+                            Pro adds organization features. Your article content
+                            still goes to your selected Git provider, not to a
+                            My Stash Mark reading database.
+                        </p>
+                    </article>
+                    <article class="answer">
+                        <h3>What should I try first?</h3>
+                        <p>
+                            Start with Free and save several articles to one
+                            repository. Upgrade only when your archive clearly
+                            needs multiple destinations or custom paths.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrap">
+                <span>My Stash Mark - save articles to your Git repo.</span>
+                <span>
+                    <a href="index.html#install">Install</a> &nbsp;
+                    <a href="privacy.html">Privacy</a> &nbsp;
+                    <a href="terms.html">Terms</a>
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>

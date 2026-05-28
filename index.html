@@ -471,6 +471,78 @@
                 font-size: 0.96rem;
             }
 
+            .install {
+                background: var(--paper);
+                border-bottom: 1px solid var(--line);
+            }
+
+            .install-grid {
+                display: grid;
+                grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1fr);
+                gap: 3rem;
+                align-items: start;
+            }
+
+            .install-note {
+                position: sticky;
+                top: 96px;
+            }
+
+            .install-note .section-title {
+                font-size: clamp(2.1rem, 4vw, 4rem);
+            }
+
+            .install-note p {
+                margin: 1rem 0 0;
+                color: var(--ink-soft);
+            }
+
+            .browser-panels {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1rem;
+            }
+
+            .browser-panel,
+            .setup-panel {
+                border: 1px solid var(--line);
+                background: var(--paper-2);
+                box-shadow: var(--soft-shadow);
+                border-radius: var(--radius);
+            }
+
+            .browser-panel {
+                padding: 1.2rem;
+            }
+
+            .browser-panel h3,
+            .setup-panel h3 {
+                font-size: 1.35rem;
+            }
+
+            .install-list {
+                margin: 1rem 0 0;
+                padding-left: 1.25rem;
+                color: var(--ink-soft);
+                font-size: 0.96rem;
+            }
+
+            .install-list li + li {
+                margin-top: 0.5rem;
+            }
+
+            .setup-panel {
+                margin-top: 1rem;
+                padding: 1.3rem;
+            }
+
+            .token-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                margin-top: 1rem;
+            }
+
             .showcase {
                 border-bottom: 1px solid var(--line);
             }
@@ -963,12 +1035,14 @@
                 .showcase-grid,
                 .data-panel,
                 .pro-layout,
+                .install-grid,
                 .faq-grid,
                 .final-cta .wrap {
                     grid-template-columns: 1fr;
                 }
 
                 .flow-grid,
+                .browser-panels,
                 .privacy-points {
                     grid-template-columns: 1fr 1fr;
                 }
@@ -987,6 +1061,10 @@
                 }
 
                 .price-note {
+                    position: static;
+                }
+
+                .install-note {
                     position: static;
                 }
             }
@@ -1035,6 +1113,7 @@
                 }
 
                 .flow-grid,
+                .browser-panels,
                 .privacy-points {
                     grid-template-columns: 1fr;
                 }
@@ -1109,9 +1188,11 @@
                 </a>
                 <div class="nav-links">
                     <a href="#how">How it works</a>
+                    <a href="#install">Install</a>
+                    <a href="faq.html">FAQ</a>
                     <a href="#privacy">Privacy</a>
                     <a href="#pro">Pro</a>
-                    <a class="button ghost" href="#try">Try it</a>
+                    <a class="button ghost" href="#install">Try it</a>
                 </div>
             </nav>
         </div>
@@ -1129,7 +1210,7 @@
                         portable, and private by default.
                     </p>
                     <div class="hero-actions" id="try">
-                        <a class="button primary" href="https://mystashmark.com"
+                        <a class="button primary" href="#install"
                             >Try My Stash Mark</a
                         >
                         <a class="button secondary" href="#pro"
@@ -1247,6 +1328,120 @@
                                 </p>
                             </div>
                         </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="install" class="install">
+                <div class="wrap install-grid">
+                    <div class="install-note reveal">
+                        <p class="section-kicker">Install the browser plugin</p>
+                        <h2 class="section-title">
+                            Add My Stash Mark from your browser's extension
+                            store.
+                        </h2>
+                        <p>
+                            Install the published extension for Chrome or
+                            Firefox, then connect it to the GitHub or GitLab
+                            repository where you want articles saved.
+                        </p>
+                        <div class="token-links">
+                            <a
+                                class="button secondary"
+                                href="https://github.com/settings/tokens/new?description=My%20Stash%20Mark&scopes=repo"
+                                >Create GitHub token</a
+                            >
+                            <a
+                                class="button secondary"
+                                href="https://gitlab.com/-/user_settings/personal_access_tokens"
+                                >Create GitLab token</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="reveal">
+                        <div
+                            class="browser-panels"
+                            aria-label="Browser installation steps"
+                        >
+                            <article class="browser-panel">
+                                <h3>Chrome</h3>
+                                <ol class="install-list">
+                                    <li>
+                                        Open the My Stash Mark listing in the
+                                        Chrome Web Store.
+                                    </li>
+                                    <li>Choose <strong>Add to Chrome</strong>.</li>
+                                    <li>
+                                        Confirm the browser permissions prompt.
+                                    </li>
+                                    <li>
+                                        Pin My Stash Mark to your toolbar for
+                                        quick article saves.
+                                    </li>
+                                </ol>
+                                <div class="token-links">
+                                    <a
+                                        class="button secondary"
+                                        href="https://chromewebstore.google.com/search/My%20Stash%20Mark"
+                                        >Chrome Web Store</a
+                                    >
+                                </div>
+                            </article>
+
+                            <article class="browser-panel">
+                                <h3>Firefox</h3>
+                                <ol class="install-list">
+                                    <li>
+                                        Open the My Stash Mark listing on
+                                        Firefox Add-ons.
+                                    </li>
+                                    <li>
+                                        Choose <strong>Add to Firefox</strong>.
+                                    </li>
+                                    <li>
+                                        Approve the browser permissions prompt.
+                                    </li>
+                                    <li>
+                                        Keep My Stash Mark visible in the
+                                        toolbar if you save articles often.
+                                    </li>
+                                </ol>
+                                <div class="token-links">
+                                    <a
+                                        class="button secondary"
+                                        href="https://addons.mozilla.org/firefox/search/?q=My%20Stash%20Mark"
+                                        >Firefox Add-ons</a
+                                    >
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="setup-panel">
+                            <h3>Connect your reading repo</h3>
+                            <ol class="install-list">
+                                <li>
+                                    Create or choose a GitHub or GitLab
+                                    repository for saved articles.
+                                </li>
+                                <li>
+                                    Create a Personal Access Token:
+                                    <code>repo</code> scope for GitHub, or
+                                    <code>api</code> and
+                                    <code>write_repository</code> scopes for
+                                    GitLab.
+                                </li>
+                                <li>
+                                    Open the My Stash Mark extension settings
+                                    and enter your provider, owner, repository,
+                                    branch, and token.
+                                </li>
+                                <li>
+                                    Save settings, open an article, click the
+                                    extension icon, add optional tags, and save.
+                                </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1633,7 +1828,7 @@ The readable article content...</code></pre>
                         </p>
                     </div>
                     <div class="hero-actions">
-                        <a class="button primary" href="https://mystashmark.com"
+                        <a class="button primary" href="#install"
                             >Try My Stash Mark</a
                         >
                         <a class="button secondary" href="#pro">Review Pro</a>
@@ -1662,7 +1857,8 @@ The readable article content...</code></pre>
                         href="https://github.com/jeremymooredev/support/issues"
                         >Issues and support</a
                     >
-                    &nbsp; <a href="privacy.html">Privacy</a> &nbsp;
+                    &nbsp; <a href="faq.html">FAQ</a> &nbsp;
+                    <a href="privacy.html">Privacy</a> &nbsp;
                     <a href="terms.html">Terms</a></span
                 >
             </div>
